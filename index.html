@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faberco | Hacé fácil lo de todos los días</title>
+<meta name="description" content="Productos prácticos para tu casa, tus mascotas y tus salidas. Pagá seguro con Mercado Pago, 3 cuotas sin interés y envío gratis en tu primera compra.">
+<meta name="theme-color" content="#142D4A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Faberco | Hacé fácil lo de todos los días">
+<meta property="og:description" content="Productos prácticos para tu casa, tus mascotas y tus salidas. Envío gratis en tu primera compra.">
+<meta property="og:locale" content="es_AR">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#app">Saltar al contenido</a>
+
+<div class="topbar" role="note">
+  <span>Envío gratis en tu primera compra</span>
+  <span class="topbar-sep" aria-hidden="true">·</span>
+  <span class="topbar-hide">3 cuotas sin interés</span>
+  <span class="topbar-sep topbar-hide" aria-hidden="true">·</span>
+  <span class="topbar-hide">10% OFF por transferencia</span>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="#/" aria-label="Faberco, ir al inicio"><img src="img/logo.png" alt="Faberco" width="104" height="49"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#/productos">Productos</a>
+      <a href="#/como-comprar">Cómo comprar</a>
+      <a href="#/contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa-sm" data-wa="Hola, quiero hacer una consulta" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main id="app" tabindex="-1">
+  <noscript><p style="padding:2rem;text-align:center">Para ver el catálogo necesitás activar JavaScript. También podés escribirnos por WhatsApp al +54 9 379 432-0850.</p></noscript>
+</main>
+
+<footer class="site-footer" id="contacto">
+  <div class="wrap footer-in">
+    <div class="f-brand">
+      <img src="img/logo.png" alt="Faberco" width="120" height="56">
+      <p>Productos prácticos para tu casa, tus mascotas y tus salidas.</p>
+    </div>
+    <div class="f-col">
+      <h4>Tienda</h4>
+      <a href="#/productos">Todos los productos</a>
+      <a href="#/como-comprar">Cómo comprar</a>
+      <a href="#/resenas">Opiniones de clientes</a>
+      <a href="#/preguntas">Preguntas frecuentes</a>
+    </div>
+    <div class="f-col">
+      <h4>Ayuda</h4>
+      <a href="#/envios">Envíos</a>
+      <a href="#/garantia">Cambios y garantía</a>
+      <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor" target="_blank" rel="noopener">Defensa del Consumidor</a>
+    </div>
+    <div class="f-col">
+      <h4>Contacto</h4>
+      <a data-wa="Hola, quiero hacer una consulta" target="_blank" rel="noopener" class="f-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>+54 9 379 432-0850</a>
+      <a href="https://www.instagram.com/fabercoimp/" target="_blank" rel="noopener" class="f-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>@fabercoimp</a>
+      <a id="f-mail" href="#" class="f-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg><span></span></a>
+      <span>Corrientes, Argentina</span>
+    </div>
+  </div>
+  <div class="wrap f-bottom">
+    <p>Defensa del Consumidor. Para reclamos ingresá <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor" target="_blank" rel="noopener">acá</a>.</p>
+    <p id="f-legal"></p>
+    <p>© <span id="year"></span> Faberco · Corrientes, Argentina</p>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="Hola, quiero consultar por sus productos" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+
+<dialog class="popup transfer" id="transfer" aria-labelledby="transfer-title">
+  <button class="popup-close" type="button" aria-label="Cerrar" data-close>×</button>
+  <div class="transfer-body" id="transfer-body"></div>
+</dialog>
+
+<dialog class="popup" id="popup" aria-labelledby="popup-title">
+  <button class="popup-close" type="button" aria-label="Cerrar" data-close>×</button>
+  <div class="popup-body">
+    <div class="popup-text">
+      <img src="img/logo.png" alt="Faberco" width="96" height="45" class="popup-logo">
+      <h2 id="popup-title">Antes de irte, llevate <em>envío gratis</em></h2>
+      <p>En tu primera compra el envío va por nuestra cuenta. Elegí tu producto y pagá seguro con Mercado Pago.</p>
+      <a class="btn btn-primary btn-block" href="#/productos" data-close>Ver productos</a>
+      <button class="popup-skip" type="button" data-close>Seguir mirando</button>
+    </div>
+    <div class="popup-img" aria-hidden="true"><img src="img/carro/1.webp?v=5" alt="" loading="lazy" width="500" height="500"></div>
+  </div>
+</dialog>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.23 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm4.5 5.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8Zm5-2.1h.01"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5h11v9H3zM14 9.5h4l3 3v3h-7M7 18.2a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4Zm10 0a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v11H9l-5 4zM8 9.5h8M8 12.5h5"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 3 4 7v10l8 4 8-4V7zM4 7l8 4 8-4M12 11v10"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-6.2 7-11.2A7 7 0 0 0 5 9.8C5 14.8 12 21 12 21Zm0-8.6a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2Z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M5 11h14v9H5zM8 11V8a4 4 0 0 1 8 0v3M12 14.5v2.5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5h18v11H3zM3 10.5h18M6.5 14.5h3"/></symbol>
+    <symbol id="i-percent" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M19 5 5 19M7.5 9a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8Zm9 9.8a1.9 1.9 0 1 0 0-3.8 1.9 1.9 0 0 0 0 3.8Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9 6.8 19.7l1-5.9-4.3-4.1 5.9-.8z"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9.5h3.5L12 5.5v13l-4.5-4H4zM15.5 9a4.2 4.2 0 0 1 0 6M18 6.8a7.4 7.4 0 0 1 0 10.4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 3 5 6v5.5c0 4.3 2.9 8 7 9.5 4.1-1.5 7-5.2 7-9.5V6zM9 12l2.2 2.2L15.5 10"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3.5 6h17v12h-17zM3.5 7l8.5 6.5L20.5 7"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v14H4zM4 16l4.5-4.5 3.5 3.5 3-3 5 5M9 10a1.2 1.2 0 1 0 0-2.4A1.2 1.2 0 0 0 9 10Z"/></symbol>
+  </defs>
+</svg>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
